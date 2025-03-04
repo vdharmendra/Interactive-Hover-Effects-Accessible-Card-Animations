@@ -1,0 +1,125 @@
+/* GOOGLE FONT LINK */
+
+/* DEFAULT CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* PAGE STYLE */
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F7F9FC;
+    font-family: cursive;
+    font-size: 18px;
+    color: #5d6494;
+
+}
+.containerBox {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.boxIcon {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: box-shadow ease 1s;
+    transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;   
+}
+.icon {
+    position: relative;
+    margin-top: 8px;
+    transition: all 0.6s ease;
+    transition-delay: 0.32s;
+    will-change: transform;
+}
+.iconBg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid rgba(225, 227, 232, 0.18);
+    background-color: #fff;
+    display: flex;
+    border-radius: 14px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+    transition-delay: 0.32s;
+    box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+    will-change: transform;
+}
+.title {
+    position: relative;
+}
+.main:hover .boxIcon {
+    box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+    transition-delay: 0.32s;
+}
+.main:hover .iconBg {
+    transform: translateY(-32px) scale(6);
+}
+.main:hover .icon {
+    transform: translateY(-48px) scale(1.4);
+}
+.main {
+    width: 220px;
+    height: 220px;
+    border-radius: 14px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+           
+}
+.textBox {
+    position: relative;
+    top: -32px;
+    width: 200px;
+    text-align: center;
+    transition: all 0.4s ease;
+    transition-delay: 0.32s;
+}
+.main:hover .textBox {
+    opacity: 0;
+    transform: translateY(-4px) scale(.8);
+}
+.boxIcon::after {
+    content: "Unlock your full potential with smart tools designed to streamline your workflow and save time.";
+    position: absolute;
+    width: 170px;
+    top: 111px;
+    opacity: 0;
+    font-size: 13px;
+    color: #5d6494;
+    line-height: 20px;
+    transition: all 0.3s ease;
+    transition-delay: 0.32s;   
+}
+.main:hover .boxIcon::after {
+    opacity: 1;
+}
+.dr {
+    position: absolute;
+    bottom: 16px; 
+    right: 16px;
+    width:100px;
+}
